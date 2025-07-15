@@ -1,5 +1,5 @@
 # Mini Voice AI Assistant
- AI Voice Assistant using LiveKit
+ AI Voice Assistant using LiveKit and Gemini API.
 
 ## Getting started
 
