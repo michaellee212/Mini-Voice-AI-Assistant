@@ -38,7 +38,7 @@ export function AgentControlBar({
   ...props
 }: AgentControlBarProps) {
   const participants = useRemoteParticipants();
-  const [chatOpen, setChatOpen] = React.useState(false);
+  const [chatOpen, setChatOpen] = React.useState(true);
   const [isSendingMessage, setIsSendingMessage] = React.useState(false);
 
   const isAgentAvailable = participants.some((p) => p.isAgent);
@@ -159,13 +159,6 @@ export function AgentControlBar({
             </Toggle>
           )}
         </div>
-        {visibleControls.leave && (
-          <Button variant="destructive" onClick={onLeave} className="font-mono">
-            <PhoneDisconnectIcon weight="bold" />
-            <span className="hidden md:inline">END CALL</span>
-            <span className="inline md:hidden">END</span>
-          </Button>
-        )}
       </div>
     </div>
   );
