@@ -8,8 +8,8 @@ Run the following command inside `Mini-Voice-AI-Assistant` to activate the virtu
 For Windows
 ```bash
 cd Mini-Voice-AI-Assistant
-.\venv\Scripts\activate
 python3 -m pip install -r requirements.txt
+.\venv\Scripts\activate
 python3 agent.py dev
 ```
 
